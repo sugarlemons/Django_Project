@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Profile | Klorofil - Free Bootstrap Dashboard Template</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- VENDOR CSS -->
+    <link rel="stylesheet" href="static/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/vendor/linearicons/style.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="static/css/main.css">
+    <!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+    <link rel="stylesheet" href="static/css/demo.css">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <!-- ICONS -->
+    <link rel="apple-touch-icon" sizes="76x76" href="static/img/apple-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="static/img/favicon.png">
+
+    <script src="static/js/echarts.min.js"></script>
+    <script src="static/js/echarts.js"></script>
+
+    <script src="static/vendor/jquery/jquery.js"></script>
+
+</head>
+
+<body>
+    <!-- WRAPPER -->
+    <div id="wrapper">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="brand">
+                <a href="index.html"><img src="static/img/logo-dark.png" alt="Klorofil Logo" class="img-responsive logo"></a>
+            </div>
+            <div class="container-fluid">
+                <div class="navbar-btn">
+                    <button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></button>
+                </div>
+                <form class="navbar-form navbar-left">
+                    <div class="input-group">
+                        <input type="text" value="" class="form-control" placeholder="Search dashboard...">
+                        <span class="input-group-btn"><button type="button" class="btn btn-primary">Go</button></span>
+                    </div>
+                </form>
+                <div class="navbar-btn navbar-btn-right">
+                    <a class="btn btn-success update-pro" href="#downloads/klorofil-pro-bootstrap-admin-dashboard-template/?utm_source=klorofil&utm_medium=template&utm_campaign=KlorofilPro" title="Upgrade to Pro" target="_blank"><i class="fa fa-rocket"></i> <span>UPGRADE TO PRO</span></a>
+                </div>
+                <div id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle icon-menu" data-toggle="dropdown">
+                                <i class="lnr lnr-alarm"></i>
+                                <span class="badge bg-danger">5</span>
+                            </a>
+                            <ul class="dropdown-menu notifications">
+                                <li><a href="#" class="notification-item"><span class="dot bg-warning"></span>System space is almost full</a></li>
+                                <li><a href="#" class="notification-item"><span class="dot bg-danger"></span>You have 9 unfinished tasks</a></li>
+                                <li><a href="#" class="notification-item"><span class="dot bg-success"></span>Monthly report is available</a></li>
+                                <li><a href="#" class="notification-item"><span class="dot bg-warning"></span>Weekly meeting in 1 hour</a></li>
+                                <li><a href="#" class="notification-item"><span class="dot bg-success"></span>Your request has been approved</a></li>
+                                <li><a href="#" class="more">See all notifications</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="lnr lnr-question-circle"></i> <span>Help</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Basic Use</a></li>
+                                <li><a href="#">Working With Data</a></li>
+                                <li><a href="#">Security</a></li>
+                                <li><a href="#">Troubleshooting</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="static/img/user.png" class="img-circle" alt="Avatar"> <span>Samuel</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><i class="lnr lnr-user"></i> <span>My Profile</span></a></li>
+                                <li><a href="#"><i class="lnr lnr-envelope"></i> <span>Message</span></a></li>
+                                <li><a href="#"><i class="lnr lnr-cog"></i> <span>Settings</span></a></li>
+                                <li><a href="#"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
+                            </ul>
+                        </li>
+                        <!-- <li>
+                            <a class="update-pro" href="#downloads/klorofil-pro-bootstrap-admin-dashboard-template/?utm_source=klorofil&utm_medium=template&utm_campaign=KlorofilPro" title="Upgrade to Pro" target="_blank"><i class="fa fa-rocket"></i> <span>UPGRADE TO PRO</span></a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- END NAVBAR -->
+        <!-- LEFT SIDEBAR -->
+        <div id="sidebar-nav" class="sidebar">
+            <div class="sidebar-scroll">
+                <nav>
+                    <ul class="nav">
+                        <li><a href="index.html" class=""><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
+                        <li><a href="elements.html" class=""><i class="lnr lnr-code"></i> <span>Elements</span></a></li>
+                        <li><a href="charts.html" class=""><i class="lnr lnr-chart-bars"></i> <span>Charts</span></a></li>
+                        <li><a href="panels.html" class=""><i class="lnr lnr-cog"></i> <span>Panels</span></a></li>
+                        <li><a href="notifications.html" class=""><i class="lnr lnr-alarm"></i> <span>Notifications</span></a></li>
+                        <li>
+                            <a href="#subPages" data-toggle="collapse" class="active"><i class="lnr lnr-file-empty"></i> <span>用户总览</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+                            <div id="subPages" class="collapse in">
+                                <ul class="nav">
+                                    <li><a href="page-charts.html" class="active">数据总览</a></li>
+                                    <li><a href="page-profile.html" class="">川普</a></li>
+                                    <li><a href="page-profile.html" class="">拜登</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="tables.html" class=""><i class="lnr lnr-dice"></i> <span>Tables</span></a></li>
+                        <li><a href="typography.html" class=""><i class="lnr lnr-text-format"></i> <span>Typography</span></a></li>
+                        <li><a href="icons.html" class=""><i class="lnr lnr-linearicons"></i> <span>Icons</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- END LEFT SIDEBAR -->
+        <!-- MAIN -->
+        <div class="main">
+            <!-- MAIN CONTENT -->
+            <div class="main-content">
+                <div class="container-fluid">
+
+                    <div class="row">
+						<div class="col-md-6">
+							<div class="panel">
+								<div class="panel-heading">
+									<h3 class="panel-title">Line Chart</h3>
+								</div>
+								<div class="panel-body">
+<!--									<div id="demo-line-chart" class="ct-chart"></div>-->
+<!--                                    change to echart-->
+                                       <div id="main1" style="width: 500px;height:300px;"></div>
+                    <script type="text/javascript">
+                        // 基于准备好的dom，初始化echarts实例
+                        var myChart = echarts.init(document.getElementById('main1'));
+
+                        // 指定图表的配置项和数据
+                        var option = {
+                            title: {
+                                text: 'ECharts 入门示例'
+                            },
+                            tooltip: {},
+                            legend: {
+                                data:['销量']
+                            },
+                            xAxis: {
+                                data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+                            },
+                            yAxis: {},
+                            series: [{
+                                name: '销量',
+                                type: 'bar',
+                                data: [5, 20, 36, 10, 10, 20]
+                            }]
+                        };
+
+                        // 使用刚指定的配置项和数据显示图表。
+                        myChart.setOption(option);
+                    </script>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="panel">
+								<div class="panel-heading">
+									<h3 class="panel-title">Bar Chart</h3>
+								</div>
+								<div class="panel-body">
+<!--									<div id="demo-bar-chart" class="ct-chart"></div>-->
+<!--                                    change to e chart-->
+
+                                     <div id="main2" style="width:100%;height:300px;"></div>
+                                    <script type="text/javascript">
+
+                                    var chartDom = document.getElementById('main2');
+                                    var myChart = echarts.init(chartDom);
+                                    var option;
+
+                                    option = {
+                                        title: {
+                                            text: '某站点用户访问来源',
+                                            subtext: '纯属虚构',
+                                            left: 'center'
+                                        },
+                                        tooltip: {
+                                            trigger: 'item'
+                                        },
+                                        legend: {
+                                            orient: 'vertical',
+                                            left: 'left',
+                                        },
+                                        series: [
+                                            {
+                                                name: '访问来源',
+                                                type: 'pie',
+                                                radius: '50%',
+                                                data: [
+                                                    {value: 1048, name: '搜索引擎'},
+                                                    {value: 735, name: '直接访问'},
+                                                    {value: 580, name: '邮件营销'},
+                                                    {value: 484, name: '联盟广告'},
+                                                    {value: 300, name: '视频广告'}
+                                                ],
+                                                emphasis: {
+                                                    itemStyle: {
+                                                        shadowBlur: 10,
+                                                        shadowOffsetX: 0,
+                                                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    };
+
+                                    myChart.setOption(option);
+
+                                        </script>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+<!--						<div class="col-md-6">-->
+<!--							<div class="panel">-->
+<!--								<div class="panel-heading">-->
+<!--									<h3 class="panel-title">Area Chart</h3>-->
+<!--								</div>-->
+<!--								<div class="panel-body">-->
+<!--&lt;!&ndash;									<div id="demo-area-chart" class="ct-chart"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                     <div id="main3" style="width:100%;height:300px;"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <script type="text/javascript">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                                    var ROOT_PATH = 'https://cdn.jsdelivr.net/gh/apache/echarts-website@asf-site/examples';&ndash;&gt;-->
+
+<!--&lt;!&ndash;                                    var chartDom = document.getElementById('main3');&ndash;&gt;-->
+<!--&lt;!&ndash;                                    var myChart = echarts.init(chartDom);&ndash;&gt;-->
+<!--&lt;!&ndash;                                    var option;&ndash;&gt;-->
+
+<!--&lt;!&ndash;                                    $.get(ROOT_PATH + '/data/asset/data/life-expectancy-table.json', function (_rawData) {&ndash;&gt;-->
+<!--&lt;!&ndash;                                        run(_rawData);&ndash;&gt;-->
+<!--&lt;!&ndash;                                    });&ndash;&gt;-->
+
+<!--&lt;!&ndash;                                    function run(_rawData) {&ndash;&gt;-->
+
+<!--&lt;!&ndash;                                        // var countries = ['Australia', 'Canada', 'China', 'Cuba', 'Finland', 'France', 'Germany', 'Iceland', 'India', 'Japan', 'North Korea', 'South Korea', 'New Zealand', 'Norway', 'Poland', 'Russia', 'Turkey', 'United Kingdom', 'United States'];&ndash;&gt;-->
+<!--&lt;!&ndash;                                        var countries = ['Finland', 'France', 'Germany', 'Iceland', 'Norway', 'Poland', 'Russia', 'United Kingdom'];&ndash;&gt;-->
+<!--&lt;!&ndash;                                        var datasetWithFilters = [];&ndash;&gt;-->
+<!--&lt;!&ndash;                                        var seriesList = [];&ndash;&gt;-->
+<!--&lt;!&ndash;                                        echarts.util.each(countries, function (country) {&ndash;&gt;-->
+<!--&lt;!&ndash;                                            var datasetId = 'dataset_' + country;&ndash;&gt;-->
+<!--&lt;!&ndash;                                            datasetWithFilters.push({&ndash;&gt;-->
+<!--&lt;!&ndash;                                                id: datasetId,&ndash;&gt;-->
+<!--&lt;!&ndash;                                                fromDatasetId: 'dataset_raw',&ndash;&gt;-->
+<!--&lt;!&ndash;                                                transform: {&ndash;&gt;-->
+<!--&lt;!&ndash;                                                    type: 'filter',&ndash;&gt;-->
+<!--&lt;!&ndash;                                                    config: {&ndash;&gt;-->
+<!--&lt;!&ndash;                                                        and: [&ndash;&gt;-->
+<!--&lt;!&ndash;                                                            { dimension: 'Year', gte: 1950 },&ndash;&gt;-->
+<!--&lt;!&ndash;                                                            { dimension: 'Country', '=': country }&ndash;&gt;-->
+<!--&lt;!&ndash;                                                        ]&ndash;&gt;-->
+<!--&lt;!&ndash;                                                    }&ndash;&gt;-->
+<!--&lt;!&ndash;                                                }&ndash;&gt;-->
+<!--&lt;!&ndash;                                            });&ndash;&gt;-->
+<!--&lt;!&ndash;                                            seriesList.push({&ndash;&gt;-->
+<!--&lt;!&ndash;                                                type: 'line',&ndash;&gt;-->
+<!--&lt;!&ndash;                                                datasetId: datasetId,&ndash;&gt;-->
+<!--&lt;!&ndash;                                                showSymbol: false,&ndash;&gt;-->
+<!--&lt;!&ndash;                                                name: country,&ndash;&gt;-->
+<!--&lt;!&ndash;                                                endLabel: {&ndash;&gt;-->
+<!--&lt;!&ndash;                                                    show: true,&ndash;&gt;-->
+<!--&lt;!&ndash;                                                    formatter: function (params) {&ndash;&gt;-->
+<!--&lt;!&ndash;                                                        return params.value[3] + ': ' + params.value[0];&ndash;&gt;-->
+<!--&lt;!&ndash;                                                    }&ndash;&gt;-->
+<!--&lt;!&ndash;                                                },&ndash;&gt;-->
+<!--&lt;!&ndash;                                                labelLayout: {&ndash;&gt;-->
+<!--&lt;!&ndash;                                                    moveOverlap: 'shiftY'&ndash;&gt;-->
+<!--&lt;!&ndash;                                                },&ndash;&gt;-->
+<!--&lt;!&ndash;                                                emphasis: {&ndash;&gt;-->
+<!--&lt;!&ndash;                                                    focus: 'series'&ndash;&gt;-->
+<!--&lt;!&ndash;                                                },&ndash;&gt;-->
+<!--&lt;!&ndash;                                                encode: {&ndash;&gt;-->
+<!--&lt;!&ndash;                                                    x: 'Year',&ndash;&gt;-->
+<!--&lt;!&ndash;                                                    y: 'Income',&ndash;&gt;-->
+<!--&lt;!&ndash;                                                    label: ['Country', 'Income'],&ndash;&gt;-->
+<!--&lt;!&ndash;                                                    itemName: 'Year',&ndash;&gt;-->
+<!--&lt;!&ndash;                                                    tooltip: ['Income'],&ndash;&gt;-->
+<!--&lt;!&ndash;                                                }&ndash;&gt;-->
+<!--&lt;!&ndash;                                            });&ndash;&gt;-->
+<!--&lt;!&ndash;                                        });&ndash;&gt;-->
+
+<!--&lt;!&ndash;                                        option = {&ndash;&gt;-->
+<!--&lt;!&ndash;                                            animationDuration: 10000,&ndash;&gt;-->
+<!--&lt;!&ndash;                                            dataset: [{&ndash;&gt;-->
+<!--&lt;!&ndash;                                                id: 'dataset_raw',&ndash;&gt;-->
+<!--&lt;!&ndash;                                                source: _rawData&ndash;&gt;-->
+<!--&lt;!&ndash;                                            }].concat(datasetWithFilters),&ndash;&gt;-->
+<!--&lt;!&ndash;                                            title: {&ndash;&gt;-->
+<!--&lt;!&ndash;                                                text: 'Income of Germany and France since 1950'&ndash;&gt;-->
+<!--&lt;!&ndash;                                            },&ndash;&gt;-->
+<!--&lt;!&ndash;                                            tooltip: {&ndash;&gt;-->
+<!--&lt;!&ndash;                                                order: 'valueDesc',&ndash;&gt;-->
+<!--&lt;!&ndash;                                                trigger: 'axis'&ndash;&gt;-->
+<!--&lt;!&ndash;                                            },&ndash;&gt;-->
+<!--&lt;!&ndash;                                            xAxis: {&ndash;&gt;-->
+<!--&lt;!&ndash;                                                type: 'category',&ndash;&gt;-->
+<!--&lt;!&ndash;                                                nameLocation: 'middle'&ndash;&gt;-->
+<!--&lt;!&ndash;                                            },&ndash;&gt;-->
+<!--&lt;!&ndash;                                            yAxis: {&ndash;&gt;-->
+<!--&lt;!&ndash;                                                name: 'Income'&ndash;&gt;-->
+<!--&lt;!&ndash;                                            },&ndash;&gt;-->
+<!--&lt;!&ndash;                                            grid: {&ndash;&gt;-->
+<!--&lt;!&ndash;                                                right: 140&ndash;&gt;-->
+<!--&lt;!&ndash;                                            },&ndash;&gt;-->
+<!--&lt;!&ndash;                                            series: seriesList&ndash;&gt;-->
+<!--&lt;!&ndash;                                        };&ndash;&gt;-->
+
+<!--&lt;!&ndash;                                        myChart.setOption(option);&ndash;&gt;-->
+
+<!--&lt;!&ndash;                                    }&ndash;&gt;-->
+
+<!--&lt;!&ndash;                                    myChart.setOption(option);&ndash;&gt;-->
+<!--&lt;!&ndash;                                    </script>&ndash;&gt;-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						<div class="col-md-6">-->
+
+
+                            <div>
+							<div class="panel">
+								<div class="panel-heading">
+									<h3 class="panel-title">Multiple Chart</h3>
+								</div>
+								<div class="panel-body">
+<!--									<div id="multiple-chart" class="ct-chart"></div>-->
+                                      <div id="main4" style="width:100%;height:400px;"></div>
+                                        <script type="text/javascript">
+
+                                        var ROOT_PATH = 'https://cdn.jsdelivr.net/gh/apache/echarts-website@asf-site/examples';
+
+                                        var chartDom = document.getElementById('main4');
+                                        var myChart = echarts.init(chartDom);
+                                        var option;
+
+                                        $.get(ROOT_PATH + '/data/asset/data/life-expectancy-table.json', function (_rawData) {
+                                            run(_rawData);
+                                        });
+
+                                        function run(_rawData) {
+
+                                            // var countries = ['Australia', 'Canada', 'China', 'Cuba', 'Finland', 'France', 'Germany', 'Iceland', 'India', 'Japan', 'North Korea', 'South Korea', 'New Zealand', 'Norway', 'Poland', 'Russia', 'Turkey', 'United Kingdom', 'United States'];
+                                            var countries = ['Finland', 'France', 'Germany', 'Iceland', 'Norway', 'Poland', 'Russia', 'United Kingdom'];
+                                            var datasetWithFilters = [];
+                                            var seriesList = [];
+                                            echarts.util.each(countries, function (country) {
+                                                var datasetId = 'dataset_' + country;
+                                                datasetWithFilters.push({
+                                                    id: datasetId,
+                                                    fromDatasetId: 'dataset_raw',
+                                                    transform: {
+                                                        type: 'filter',
+                                                        config: {
+                                                            and: [
+                                                                { dimension: 'Year', gte: 1950 },
+                                                                { dimension: 'Country', '=': country }
+                                                            ]
+                                                        }
+                                                    }
+                                                });
+                                                seriesList.push({
+                                                    type: 'line',
+                                                    datasetId: datasetId,
+                                                    showSymbol: false,
+                                                    name: country,
+                                                    endLabel: {
+                                                        show: true,
+                                                        formatter: function (params) {
+                                                            return params.value[3] + ': ' + params.value[0];
+                                                        }
+                                                    },
+                                                    labelLayout: {
+                                                        moveOverlap: 'shiftY'
+                                                    },
+                                                    emphasis: {
+                                                        focus: 'series'
+                                                    },
+                                                    encode: {
+                                                        x: 'Year',
+                                                        y: 'Income',
+                                                        label: ['Country', 'Income'],
+                                                        itemName: 'Year',
+                                                        tooltip: ['Income'],
+                                                    }
+                                                });
+                                            });
+
+                                            option = {
+                                                animationDuration: 10000,
+                                                dataset: [{
+                                                    id: 'dataset_raw',
+                                                    source: _rawData
+                                                }].concat(datasetWithFilters),
+                                                title: {
+                                                    text: 'Income of Germany and France since 1950'
+                                                },
+                                                tooltip: {
+                                                    order: 'valueDesc',
+                                                    trigger: 'axis'
+                                                },
+                                                xAxis: {
+                                                    type: 'category',
+                                                    nameLocation: 'middle'
+                                                },
+                                                yAxis: {
+                                                    name: 'Income'
+                                                },
+                                                grid: {
+                                                    right: 140
+                                                },
+                                                series: seriesList
+                                            };
+
+                                            myChart.setOption(option);
+
+                                        }
+
+                                        </script>
+								</div>
+							</div>
+						</div>
+					</div>
+
+                </div>
+            </div>
+            <!-- END MAIN CONTENT -->
+        </div>
+        <!-- END MAIN -->
+        <div class="clearfix"></div>
+        <footer>
+            <div class="container-fluid">
+                <p class="copyright">&copy; 2017 <a href="#" target="_blank">Theme I Need</a>. All Rights Reserved. More Templates <a href="http://www.php.cn/" target="_blank" title="php中文网">php中文网</a> - Collect from <a href="http://www.php.cn/" title="网页模板" target="_blank">网页模板</a></p>
+            </div>
+        </footer>
+    </div>
+    <!-- END WRAPPER -->
+    <!-- Javascript -->
+
+
+	<script>
+	$(function() {
+		var options;
+
+		var data = {
+			labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+			series: [
+				[200, 380, 350, 320, 410, 450, 570, 400, 555, 620, 750, 900],
+			]
+		};
+
+		// line chart
+		options = {
+			height: "300px",
+			showPoint: true,
+			axisX: {
+				showGrid: false
+			},
+			lineSmooth: false,
+		};
+
+		new Chartist.Line('#demo-line-chart', data, options);
+
+		// bar chart
+		options = {
+			height: "300px",
+			axisX: {
+				showGrid: false
+			},
+		};
+
+		new Chartist.Bar('#demo-bar-chart', data, options);
+
+
+		// area chart
+		options = {
+			height: "270px",
+			showArea: true,
+			showLine: false,
+			showPoint: false,
+			axisX: {
+				showGrid: false
+			},
+			lineSmooth: false,
+		};
+
+		new Chartist.Line('#demo-area-chart', data, options);
+
+
+		// multiple chart
+		var data = {
+			labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+			series: [{
+				name: 'series-real',
+				data: [200, 380, 350, 320, 410, 450, 570, 400, 555, 620, 750, 900],
+			}, {
+				name: 'series-projection',
+				data: [240, 350, 360, 380, 400, 450, 480, 523, 555, 600, 700, 800],
+			}]
+		};
+
+		var options = {
+			fullWidth: true,
+			lineSmooth: false,
+			height: "270px",
+			low: 0,
+			high: 'auto',
+			series: {
+				'series-projection': {
+					showArea: true,
+					showPoint: false,
+					showLine: false
+				},
+			},
+			axisX: {
+				showGrid: false,
+
+			},
+			axisY: {
+				showGrid: false,
+				onlyInteger: true,
+				offset: 0,
+			},
+			chartPadding: {
+				left: 20,
+				right: 20
+			}
+		};
+
+		new Chartist.Line('#multiple-chart', data, options);
+
+	});
+	</script>
+
+
+</body>
+
+</html>
