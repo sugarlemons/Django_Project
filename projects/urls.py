@@ -36,15 +36,8 @@ urlpatterns = [
     path('tables.html',views.sub9),
     path('icons.html',views.sub10),
     path('page-charts.html',views.sub11),
-    path('test.html',views.sub12)
-
-
-
-    # path('upload1', views.upload1), # 人脸识别
-    # path('upload2', views.upload2), # 场景分类
-    # path('upload3', views.upload3), # 目标检测
-    # path('upload4', views.upload4), # 视频异常检测
-    # path('upload5', views.upload5), # 视频目标跟踪
-    # path('upload6', views.upload6), # 语音识别
+    path('test.html',views.sub12),
+    path('search.html',views.search),
+    path('details.html',views.details)
 
 ]

@@ -123,10 +123,10 @@
 			<div class="sidebar-scroll">
 				<nav>
 					<ul class="nav">
-						<li><a href="index.html" class="active"><i class="lnr lnr-home"></i> <span>实时热点总览</span></a></li>
+						<li><a href="index.html" class=""><i class="lnr lnr-home"></i> <span>实时热点总览</span></a></li>
 						<li><a href="elements.html" class=""><i class="lnr lnr-code"></i> <span>舆论场排名</span></a></li>
 						<li><a href="panels.html" class=""><i class="lnr lnr-cog"></i> <span>事件列表</span></a></li>
-						<li><a href="search.html" class=""><i class="lnr lnr-cog"></i> <span>事件搜索</span></a></li>
+						<li><a href="panels.html" class="active"><i class="lnr lnr-cog"></i> <span>事件搜索</span></a></li>
 
 						<li>
 							<a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>事件分类</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
@@ -176,79 +176,35 @@
 				<div class="container-fluid">
 					<!-- OVERVIEW -->
 					<div class="panel panel-headline">
-						<div class="panel-heading">
-							<h3 class="panel-title">实时推文数量统计</h3>
-							<p class="panel-subtitle">统计时间: 10:00 a.m. - 11:00 a.m.</p>
-						</div>
-						<div class="panel-body">
-							<div class="row">
-								<div class="col-md-3">
-									<div class="metric">
-										<span class="icon"><i class="fa fa-download"></i></span>
-										<p>
-											<span class="number">1,25233</span>
-											<span class="title">总推文数</span>
-										</p>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="metric">
-										<span class="icon"><i class="fa fa-shopping-bag"></i></span>
-										<p>
-											<span class="number">10000</span>
-											<span class="title">当前时段</span>
-										</p>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="metric">
-										<span class="icon"><i class="fa fa-eye"></i></span>
-										<p>
-											<span class="number">274</span>
-											<span class="title">热点话题</span>
-										</p>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="metric">
-										<span class="icon"><i class="fa fa-bar-chart"></i></span>
-										<p>
-											<span class="number">10</span>
-											<span class="title">突发事件</span>
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-9">
-									<div id="headline-chart" class="ct-chart"></div>
-								</div>
-								<div class="col-md-3">
-									<div class="weekly-summary text-right">
-										<span class="number">911恐怖袭击</span> <span class="percentage"><i class="fa fa-caret-up text-success"></i> 12%</span>
-										<span class="info-label">当前最热事件</span>
-									</div>
-									<div class="weekly-summary text-right">
-										<span class="number">1,752</span> <span class="percentage"><i class="fa fa-caret-up text-success"></i> 23%</span>
-										<span class="info-label">相关推文</span>
-									</div>
-									<div class="weekly-summary text-right">
-										<span class="number">99.999</span> <span class="percentage"><i class="fa fa-caret-down text-danger"></i> 8%</span>
-										<span class="info-label">热度</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+						<!-- <form class="navbar-form navbar-right"> -->
+							<!-- INPUT GROUPS -->
+
 					<!-- END OVERVIEW -->
-                    <div class="copyrights">Collect from <a href="http://www.php.cn/" >企业网站模板</a></div>
+
+				</div>
+
+					<div class="panel">
+						<div class="panel-headline">
+									<div class="panel-heading">
+										<h3 class="panel-title">搜索结果：2019-09-05期货反弹</h3>
+										<p class="panel-subtitle">2019-09-05</p>
+									</div>
+									<div class="panel-body">
+										<h4>事件描述</h4>
+										<p>自上周五开始，螺纹钢期货价格持续反弹，RB2001合约自最低点算起，反弹幅度已接近200元/吨。供需驱动向上和期货估值偏低是诱发此波反弹的核心因素，笔者综合供应、需求、库存及估值等因素分析后认为，后市反弹有望持续，反弹空间则取决于旺季需求成色。减产效果显现。笔者认为，钢材供应的变化主要取决于政策和利润两方面因素。政策方面，限产政策会导致钢厂被动减产；利润方面，当钢厂利润被压缩到一定水平时，钢厂会主动减产</p>
+									</div>
+								</div>
+							</div>
+
+
+							<script src="static/js/echarts.min.js"></script>
+							<script src="static/vendor/jquery/jquery.js"></script>
+
 					<div class="row">
-<!--						<div class="col-md-6">-->
-						<div>
-							<!-- RECENT PURCHASES -->
+						<div class="col-md-6">
 							<div class="panel">
 								<div class="panel-heading">
-									<h3 class="panel-title">当前最热事件排行</h3>
+									<h3 class="panel-title">事件追溯</h3>
 									<div class="right">
 										<button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
 										<button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
@@ -258,48 +214,36 @@
 									<table class="table table-striped">
 										<thead>
 											<tr>
-												<th>排名 No.</th>
+												<th>No.</th>
 												<th>事件名</th>
-												<th>相关推文数</th>
-												<th>所属类别</th>
 												<th>状态</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
 												<td><a href="#">1</a></td>
-												<td>长沙警方通报“货拉拉女乘客坠车死亡事件”</td>
-												<td>122</td>
-												<td>刑事</td>
+												<td>2020-04-02期货反弹</td>
 												<td><span class="label label-danger">突发</span></td>
 											</tr>
 											<tr>
 												<td><a href="#">2</a></td>
-												<td>“神医”张文荣被医院免职</td>
-												<td>100</td>
-												<td>社会</td>
+												<td>2020-04-02期货反弹</td>
 												<td><span class="label label-danger">突发</span></td>
 											</tr>
 											<tr>
 												<td><a href="#">3</a></td>
-												<td>中国人寿黑龙江省分公司被罚51万</td>
-												<td>95</td>
-												<td>社会</td>
-												<td><span class="label label-warning">上升</span></td>
+												<td>2020-04-01期货反弹</td>
+												<td><span class="label label-warning">热点</span></td>
 											</tr>
 											<tr>
 												<td><a href="#">4</a></td>
-												<td>小米10s新品发布会</td>
-												<td>90</td>
-												<td>科技</td>
-												<td><span class="label label-success">热点</span></td>
+												<td>2020-03-02期货反弹</td>
+												<td><span class="label label-success">日常</span></td>
 											</tr>
 											<tr>
 												<td><a href="#">5</a></td>
-												<td>河南一女子坐特斯拉车顶维权</td>
-												<td>80</td>
-												<td>社会</td>
-												<td><span class="label label-success">热点</span></td>
+												<td>2020-01-02期货反弹</td>
+												<td><span class="label label-success">日常</span></td>
 											</tr>
 										</tbody>
 									</table>
@@ -311,36 +255,77 @@
 									</div>
 								</div>
 							</div>
-							<!-- END RECENT PURCHASES -->
 						</div>
+
 						<div class="col-md-6">
-							<!-- MULTI CHARTS -->
-<!--							<div class="panel">-->
-<!--								<div class="panel-heading">-->
-<!--									<h3 class="panel-title">Projection vs. Realization</h3>-->
-<!--									<div class="right">-->
-<!--										<button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>-->
-<!--										<button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>-->
-<!--									</div>-->
-<!--								</div>-->
-<!--								<div class="panel-body">-->
-<!--									<div id="visits-trends-chart" class="ct-chart"></div>-->
-<!--								</div>-->
-<!--							</div>-->
-							<!-- END MULTI CHARTS -->
+							<div class="panel">
+								<div class="panel-heading">
+									<h3 class="panel-title">Bar Chart</h3>
+								</div>
+								<div class="panel-body">
+<!--									<div id="demo-bar-chart" class="ct-chart"></div>-->
+<!--                                    change to e chart-->
+
+                                     <div id="main2" style="width:100%;height:280px;"></div>
+                                    <script type="text/javascript">
+
+                                    var chartDom = document.getElementById('main2');
+                                    var myChart = echarts.init(chartDom);
+                                    var option;
+                                    list1 = {{ datavalue|safe }}
+                                    list2 = {{ dataname|safe }}
+
+                                    var obj = new Array()
+                                    for (var i = list1.length - 1; i >= 0; i--) {
+										obj.push({
+											'value': list1[i],
+											'name':  list2[i]
+										});
+									};
+									console.log(obj)
+
+                                    option = {
+                                        title: {{ title2|safe}},
+                                        tooltip: {
+                                            trigger: 'item'
+                                        },
+                                        legend: {
+                                            orient: 'vertical',
+                                            left: 'left',
+                                        },
+                                        series: [
+                                            {
+                                                name: '访问来源',
+                                                type: 'pie',
+                                                radius: '50%',
+                                                data: obj,
+                                                emphasis: {
+                                                    itemStyle: {
+                                                        shadowBlur: 10,
+                                                        shadowOffsetX: 0,
+                                                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    };
+
+                                    myChart.setOption(option);
+
+                                        </script>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-md-7">
-							<!-- TODO LIST -->
-							<div class="panel panel-scrolling">
-								<div class="panel-heading">
-									<h3 class="panel-title">热点事件</h3>
+
+					<div class="panel panel-scrolling">
+							<div class="panel-heading">
+									<h3 class="panel-title">相关资讯</h3>
 									<div class="right">
 										<button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
 										<button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
 									</div>
-								</div>
+							</div>
 								<div class="panel-body">
 									<ul class="list-unstyled todo-list">
 										<li>
@@ -348,8 +333,8 @@
 <!--												<input type="checkbox"><span></span>-->
 <!--											</label>-->
 											<p>
-												<span class="title">中国银保监会发布《银行保险机构声誉风险管理办法（试行）》</span>
-												<span class="short-description">新华社</span>
+												<span class="title">价格持降 期货稍有反弹 成交稍好转</span>
+												<span class="short-description">武汉热卷：价格持降 期货稍有反弹 成交稍好转今日开盘，武汉热卷市场价格跌20元。据兰格钢铁云商平台监测显示：28日9点武汉:热轧卷板，2.75mm涟钢普3800元，4.5mm涟钢普3680元，4.75mm武钢普3680元，5.5mm邯宝锰3720元；较上个交易日跌20元/吨。今日期货早盘走势震荡运行，商家心态谨慎观望，月底商家为了资金回笼，力保出货，今日价</span>
 												<span class="date">Oct 9, 2016</span>
 											</p>
 											<div class="controls">
@@ -361,8 +346,8 @@
 <!--												<input type="checkbox"><span></span>-->
 <!--											</label>-->
 											<p>
-												<span class="title">外交部：请美方开放德特里克堡接受世卫的溯源调查</span>
-												<span class="short-description">央视新闻</span>
+												<span class="title">LPR房贷利率出炉钢材库存降超11万吨</span>
+												<span class="short-description">金融市场。宏观信息。◎发改委：有关部门正酝酿制定市民下乡消费促进政策，以求释放城市居民庞大消费需求。◎财政部：1-6月全国累计新增减税降费11709亿元。个人所得税专项附加扣除政策开始实施后，1-6月减税302亿元</span>
 												<span class="date">Oct 23, 2016</span>
 											</p>
 											<div class="controls">
@@ -374,8 +359,8 @@
 <!--												<input type="checkbox"><span></span>-->
 <!--											</label>-->
 											<p>
-												<strong>河南济源市委书记被实名举报掌掴市政府秘书长</strong>
-												<span class="short-description">中国政务网</span>
+												<strong>黑色期货低位反弹，短线可多</strong>
+												<span class="short-description">期市短线：黑色期货低位反弹，短线可多8.29日，国内期货市场商品收盘红多绿少，贵金属白银继续领涨收涨3.04%，沪铅、苹果、橡胶、沪锌、甲醇、棉花、燃油涨超1%；黑色板块止跌反弹，焦炭、焦煤尾盘翻红，螺纹、铁矿石跌幅收窄；动力煤、豆油、豆二、L、PVC收跌超1%。临汾市2019-2020年秋冬季工业企业差异化生产管控方案；机构称8月份房企</span>
 												<span class="date">Oct 11, 2016</span>
 											</p>
 											<div class="controls">
@@ -389,150 +374,113 @@
 
 								</div>
 							</div>
-							<!-- END TODO LIST -->
-						</div>
-						<div class="col-md-5">
-							<!-- TIMELINE -->
-							<div class="panel panel-scrolling">
+							<!-- END INPUT GROUPS -->
+
+				<div class="panel">
 								<div class="panel-heading">
-									<h3 class="panel-title">近期事件相关账户</h3>
-									<div class="right">
-										<button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
-										<button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
-									</div>
+									<h3 class="panel-title">Multiple Chart</h3>
 								</div>
 								<div class="panel-body">
-									<ul class="list-unstyled activity-list">
-										<li>
-											<img src="static/img/user1.png" alt="Avatar" class="img-circle pull-left avatar">
-											<p><a href="#">Michael</a> has achieved 80% of his completed tasks <span class="timestamp">20 minutes ago</span></p>
-										</li>
-										<li>
-											<img src="static/img/user2.png" alt="Avatar" class="img-circle pull-left avatar">
-											<p><a href="#">Daniel</a> has been added as a team member to project <a href="#">System Update</a> <span class="timestamp">Yesterday</span></p>
-										</li>
-										<li>
-											<img src="static/img/user3.png" alt="Avatar" class="img-circle pull-left avatar">
-											<p><a href="#">Martha</a> created a new heatmap view <a href="#">Landing Page</a> <span class="timestamp">2 days ago</span></p>
-										</li>
-										<li>
-											<img src="static/img/user4.png" alt="Avatar" class="img-circle pull-left avatar">
-											<p><a href="#">Jane</a> has completed all of the tasks <span class="timestamp">2 days ago</span></p>
-										</li>
-										<li>
-											<img src="static/img/user5.png" alt="Avatar" class="img-circle pull-left avatar">
-											<p><a href="#">Jason</a> started a discussion about <a href="#">Weekly Meeting</a> <span class="timestamp">3 days ago</span></p>
-										</li>
-									</ul>
-									<button type="button" class="btn btn-primary btn-bottom center-block">Load More</button>
+<!--									<div id="multiple-chart" class="ct-chart"></div>-->
+                                      <div id="main4" style="width:100%;height:400px;"></div>
+                                        <script type="text/javascript">
+
+                                        var ROOT_PATH = 'https://cdn.jsdelivr.net/gh/apache/echarts-website@asf-site/examples';
+
+                                        var chartDom = document.getElementById('main4');
+                                        var myChart = echarts.init(chartDom);
+                                        var option;
+
+                                        $.get(ROOT_PATH + '/data/asset/data/life-expectancy-table.json', function (_rawData) {
+                                            run(_rawData);
+                                        });
+
+                                        function run(_rawData) {
+
+                                            // var countries = ['Australia', 'Canada', 'China', 'Cuba', 'Finland', 'France', 'Germany', 'Iceland', 'India', 'Japan', 'North Korea', 'South Korea', 'New Zealand', 'Norway', 'Poland', 'Russia', 'Turkey', 'United Kingdom', 'United States'];
+                                            var countries = ['Finland', 'France', 'Germany', 'Iceland', 'Norway', 'Poland', 'Russia', 'United Kingdom'];
+                                            var datasetWithFilters = [];
+                                            var seriesList = [];
+                                            echarts.util.each(countries, function (country) {
+                                                var datasetId = 'dataset_' + country;
+                                                datasetWithFilters.push({
+                                                    id: datasetId,
+                                                    fromDatasetId: 'dataset_raw',
+                                                    transform: {
+                                                        type: 'filter',
+                                                        config: {
+                                                            and: [
+                                                                { dimension: 'Year', gte: 1950 },
+                                                                { dimension: 'Country', '=': country }
+                                                            ]
+                                                        }
+                                                    }
+                                                });
+                                                seriesList.push({
+                                                    type: 'line',
+                                                    datasetId: datasetId,
+                                                    showSymbol: false,
+                                                    name: country,
+                                                    endLabel: {
+                                                        show: true,
+                                                        formatter: function (params) {
+                                                            return params.value[3] + ': ' + params.value[0];
+                                                        }
+                                                    },
+                                                    labelLayout: {
+                                                        moveOverlap: 'shiftY'
+                                                    },
+                                                    emphasis: {
+                                                        focus: 'series'
+                                                    },
+                                                    encode: {
+                                                        x: 'Year',
+                                                        y: 'Income',
+                                                        label: ['Country', 'Income'],
+                                                        itemName: 'Year',
+                                                        tooltip: ['Income'],
+                                                    }
+                                                });
+                                            });
+
+                                            option = {
+                                                animationDuration: 10000,
+                                                dataset: [{
+                                                    id: 'dataset_raw',
+                                                    source: _rawData
+                                                }].concat(datasetWithFilters),
+                                                title: {
+                                                    text: 'Income of Germany and France since 1950'
+                                                },
+                                                tooltip: {
+                                                    order: 'valueDesc',
+                                                    trigger: 'axis'
+                                                },
+                                                xAxis: {
+                                                    type: 'category',
+                                                    nameLocation: 'middle'
+                                                },
+                                                yAxis: {
+                                                    name: 'Income'
+                                                },
+                                                grid: {
+                                                    right: 140
+                                                },
+                                                series: seriesList
+                                            };
+
+                                            myChart.setOption(option);
+
+                                        }
+
+                                        </script>
 								</div>
 							</div>
-							<!-- END TIMELINE -->
-						</div>
-					</div>
-<!--					<div class="row">-->
-<!--						<div class="col-md-4">-->
-<!--							&lt;!&ndash; TASKS &ndash;&gt;-->
-<!--							<div class="panel">-->
-<!--								<div class="panel-heading">-->
-<!--									<h3 class="panel-title">My Tasks</h3>-->
-<!--									<div class="right">-->
-<!--										<button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>-->
-<!--										<button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>-->
-<!--									</div>-->
-<!--								</div>-->
-<!--								<div class="panel-body">-->
-<!--									<ul class="list-unstyled task-list">-->
-<!--										<li>-->
-<!--											<p>Updating Users Settings <span class="label-percent">23%</span></p>-->
-<!--											<div class="progress progress-xs">-->
-<!--												<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style="width:23%">-->
-<!--													<span class="sr-only">23% Complete</span>-->
-<!--												</div>-->
-<!--											</div>-->
-<!--										</li>-->
-<!--										<li>-->
-<!--											<p>Load &amp; Stress Test <span class="label-percent">80%</span></p>-->
-<!--											<div class="progress progress-xs">-->
-<!--												<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">-->
-<!--													<span class="sr-only">80% Complete</span>-->
-<!--												</div>-->
-<!--											</div>-->
-<!--										</li>-->
-<!--										<li>-->
-<!--											<p>Data Duplication Check <span class="label-percent">100%</span></p>-->
-<!--											<div class="progress progress-xs">-->
-<!--												<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">-->
-<!--													<span class="sr-only">Success</span>-->
-<!--												</div>-->
-<!--											</div>-->
-<!--										</li>-->
-<!--										<li>-->
-<!--											<p>Server Check <span class="label-percent">45%</span></p>-->
-<!--											<div class="progress progress-xs">-->
-<!--												<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">-->
-<!--													<span class="sr-only">45% Complete</span>-->
-<!--												</div>-->
-<!--											</div>-->
-<!--										</li>-->
-<!--										<li>-->
-<!--											<p>Mobile App Development <span class="label-percent">10%</span></p>-->
-<!--											<div class="progress progress-xs">-->
-<!--												<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">-->
-<!--													<span class="sr-only">10% Complete</span>-->
-<!--												</div>-->
-<!--											</div>-->
-<!--										</li>-->
-<!--									</ul>-->
-<!--								</div>-->
-<!--							</div>-->
-<!--							&lt;!&ndash; END TASKS &ndash;&gt;-->
-<!--						</div>-->
-<!--						<div class="col-md-4">-->
-<!--							&lt;!&ndash; VISIT CHART &ndash;&gt;-->
-<!--							<div class="panel">-->
-<!--								<div class="panel-heading">-->
-<!--									<h3 class="panel-title">Website Visits</h3>-->
-<!--									<div class="right">-->
-<!--										<button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>-->
-<!--										<button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>-->
-<!--									</div>-->
-<!--								</div>-->
-<!--								<div class="panel-body">-->
-<!--									<div id="visits-chart" class="ct-chart"></div>-->
-<!--								</div>-->
-<!--							</div>-->
-<!--							&lt;!&ndash; END VISIT CHART &ndash;&gt;-->
-<!--						</div>-->
-<!--						<div class="col-md-4">-->
-<!--							&lt;!&ndash; REALTIME CHART &ndash;&gt;-->
-<!--							<div class="panel">-->
-<!--								<div class="panel-heading">-->
-<!--									<h3 class="panel-title">System Load</h3>-->
-<!--									<div class="right">-->
-<!--										<button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>-->
-<!--										<button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>-->
-<!--									</div>-->
-<!--								</div>-->
-<!--								<div class="panel-body">-->
-<!--									<div id="system-load" class="easy-pie-chart" data-percent="70">-->
-<!--										<span class="percent">70</span>-->
-<!--									</div>-->
-<!--									<h4>CPU Load</h4>-->
-<!--									<ul class="list-unstyled list-justify">-->
-<!--										<li>High: <span>95%</span></li>-->
-<!--										<li>Average: <span>87%</span></li>-->
-<!--										<li>Low: <span>20%</span></li>-->
-<!--										<li>Threads: <span>996</span></li>-->
-<!--										<li>Processes: <span>259</span></li>-->
-<!--									</ul>-->
-<!--								</div>-->
-<!--							</div>-->
-<!--							&lt;!&ndash; END REALTIME CHART &ndash;&gt;-->
-<!--						</div>-->
-<!--					</div>-->
-				</div>
+
+
+
 			</div>
+
 			<!-- END MAIN CONTENT -->
 		</div>
 		<!-- END MAIN -->
